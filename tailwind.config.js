@@ -15,12 +15,12 @@ module.exports = {
 
   plugins: [
     // https://github.com/tailwindlabs/tailwindcss-aspect-ratio#readme
-    aspectRatio,
+    require("@tailwindcss/aspect-ratio"),
 
     // https://github.com/tailwindlabs/tailwindcss-forms#readme
-    forms,
+    require("@tailwindcss/forms"),
 
     // https://github.com/tailwindlabs/tailwindcss-typography#readme
-    typography,
+    require("@tailwindcss/typography"),
   ],
 };
