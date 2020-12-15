@@ -8,11 +8,6 @@
     "start": "next start",
     "lint:fix": "eslint ./src --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run lint:fix"
-    }
-  },
   "dependencies": {
     "@apollo/client": "^3.3.6",
     "@tailwindcss/aspect-ratio": "^0.2.0",
