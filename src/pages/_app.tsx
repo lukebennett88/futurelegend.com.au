@@ -1,6 +1,8 @@
 import * as React from "react";
+import { ApolloProvider } from "@apollo/client";
 
-import { Layout } from "../components/layout";
+import { Layout } from "@components/layout";
+import { apolloClient } from "@utils/apollo-client";
 import "../styles/globals.css";
 
 interface AppProps {
@@ -10,11 +12,11 @@ interface AppProps {
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ApolloProvider client={apolloClient}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </ApolloProvider>
   );
 }
 

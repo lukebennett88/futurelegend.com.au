@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  [tabindex] {
+    @apply focus:outline-none focus:ring;
+  }
+}
